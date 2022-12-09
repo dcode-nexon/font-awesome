@@ -1,0 +1,23 @@
+@import 'reset';
+
+div {
+	padding: 5vw;
+
+	.fa-house {
+		font-size: 300px;
+
+		path {
+			fill: rgba(0, 0, 0, 0);
+			stroke: #000;
+			stroke-width: 3;
+			stroke-dasharray: 2070;
+			stroke-dashoffset: 2070;
+			transition: stroke-dashoffset 1s, fill 1s 1s;
+
+			&:hover {
+				stroke-dashoffset: 0;
+				fill: rgba(0, 0, 0, 0.7);
+			}
+		}
+	}
+}
